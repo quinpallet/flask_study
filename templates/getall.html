@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <ul>
+            {% for obj in objs %}
+            <li>{{obj.name}}: {{obj.email}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
